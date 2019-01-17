@@ -10,4 +10,8 @@ A library based mostly on Bouncy Castle to help with Cryptography operations wit
 * Validating certificate using its parent through OCSP or CRL.
 * Generating certificates and CSR.
 
+## Release
 To use CryptoHelper library please download the Library.zip at root and include both libraries to your project.
+
+## Sample 
+Please clone the project and run the sample for better understanding of the library.
