@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoHelper", "CryptoHelper\CryptoHelper.csproj", "{73F93BE9-C345-4CA6-AFA5-102C145E9155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateCreation_Sample", "CertificateCreation_Sample\CertificateCreation_Sample.csproj", "{772DD91B-9488-4E9F-82E7-0D6AFCADD02F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateValidation_Sample", "CertificateValidation_Sample\CertificateValidation_Sample.csproj", "{1F097D10-9C4D-4EB6-8C49-8F3D5761628F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateCertSignedFromStore_Sample", "CreateCertSignedFromStore_Sample\CreateCertSignedFromStore_Sample.csproj", "{8E774005-4855-4D5C-8962-D8E82345FC1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionDecryption_Sample", "EncryptionDecryption_Sample\EncryptionDecryption_Sample.csproj", "{C2BEFBC5-147E-4DA6-9C21-C9B183186A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionDecryptionUsingSmartCard_Sample", "EncryptionDecryptionUsingSmartCard_Sample\EncryptionDecryptionUsingSmartCard_Sample.csproj", "{0A9ECA31-C979-4D43-829C-C765D6CF5189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Signing_Sample", "Signing_Sample\Signing_Sample.csproj", "{B65EB4F9-841F-4850-A125-801CAD4F6E46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigningUsingSmartCard_Sample", "SigningUsingSmartCard_Sample\SigningUsingSmartCard_Sample.csproj", "{74D2541D-54BD-49F9-8F88-E728B559BCB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLSigning_Sample", "XMLSigning_Sample\XMLSigning_Sample.csproj", "{7A83AAC0-3A2E-4DDC-B647-4A9310FAA582}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLSigningUsingSmartCard_Sample", "XMLSigningUsingSmartCard_Sample\XMLSigningUsingSmartCard_Sample.csproj", "{7F7CAD32-00B5-4B35-8AE1-17EED23A1ED8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73F93BE9-C345-4CA6-AFA5-102C145E9155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F93BE9-C345-4CA6-AFA5-102C145E9155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F93BE9-C345-4CA6-AFA5-102C145E9155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F93BE9-C345-4CA6-AFA5-102C145E9155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772DD91B-9488-4E9F-82E7-0D6AFCADD02F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772DD91B-9488-4E9F-82E7-0D6AFCADD02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772DD91B-9488-4E9F-82E7-0D6AFCADD02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772DD91B-9488-4E9F-82E7-0D6AFCADD02F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F097D10-9C4D-4EB6-8C49-8F3D5761628F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F097D10-9C4D-4EB6-8C49-8F3D5761628F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F097D10-9C4D-4EB6-8C49-8F3D5761628F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F097D10-9C4D-4EB6-8C49-8F3D5761628F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E774005-4855-4D5C-8962-D8E82345FC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E774005-4855-4D5C-8962-D8E82345FC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E774005-4855-4D5C-8962-D8E82345FC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E774005-4855-4D5C-8962-D8E82345FC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2BEFBC5-147E-4DA6-9C21-C9B183186A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2BEFBC5-147E-4DA6-9C21-C9B183186A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2BEFBC5-147E-4DA6-9C21-C9B183186A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2BEFBC5-147E-4DA6-9C21-C9B183186A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A9ECA31-C979-4D43-829C-C765D6CF5189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9ECA31-C979-4D43-829C-C765D6CF5189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A9ECA31-C979-4D43-829C-C765D6CF5189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A9ECA31-C979-4D43-829C-C765D6CF5189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B65EB4F9-841F-4850-A125-801CAD4F6E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B65EB4F9-841F-4850-A125-801CAD4F6E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B65EB4F9-841F-4850-A125-801CAD4F6E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B65EB4F9-841F-4850-A125-801CAD4F6E46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D2541D-54BD-49F9-8F88-E728B559BCB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D2541D-54BD-49F9-8F88-E728B559BCB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D2541D-54BD-49F9-8F88-E728B559BCB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D2541D-54BD-49F9-8F88-E728B559BCB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A83AAC0-3A2E-4DDC-B647-4A9310FAA582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A83AAC0-3A2E-4DDC-B647-4A9310FAA582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A83AAC0-3A2E-4DDC-B647-4A9310FAA582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A83AAC0-3A2E-4DDC-B647-4A9310FAA582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7CAD32-00B5-4B35-8AE1-17EED23A1ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7CAD32-00B5-4B35-8AE1-17EED23A1ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7CAD32-00B5-4B35-8AE1-17EED23A1ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7CAD32-00B5-4B35-8AE1-17EED23A1ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21C6C343-F172-46BA-9767-0621434841B9}
+	EndGlobalSection
+EndGlobal
