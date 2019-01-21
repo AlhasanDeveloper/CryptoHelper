@@ -1,7 +1,7 @@
-# CryptoHelper
-A library made to help with Cryptography operations with ease.
+## CryptoHelper
+A library under MIT license made to help with cryptography operations such as RSA encryption and decryption, RSA signing and validation, and certificate generating with ease all what you need to do is add referance to CryptoHelper.dll and BouncyCastle.Crypto.dll in your project and please don't forget to include both [CryptoHelper](https://github.com/AlhasanDeveloper/CryptoHelper/blob/master/LICENSE) and [BouncyCastle](https://www.bouncycastle.org/license.html) license as well.
 
-## The library include the following cryptography operations:
+## The library include the following cryptography operations
 
 * Accessing certificates on the connected smart card.
 ```cs
@@ -21,20 +21,20 @@ catch (Win32Exception ex)
 ```cs
 //Encrypt the message as a Base64 encoded string
 string encryptedMessage = Crypto.Encrypt
-    (Encoding.UTF8.GetBytes(message), publicKeyExchange, RSAEncryptionPadding.OaepSHA1);
+(Encoding.UTF8.GetBytes(message), publicKeyExchange, RSAEncryptionPadding.OaepSHA1);
 //Decrypt the Base64 encoded encrypted message
 string decryptedMessage = Encoding.UTF8.GetString
-    (Crypto.Decrypt(encryptedMessage, privateKeyExchange, RSAEncryptionPadding.OaepSHA1));
+(Crypto.Decrypt(encryptedMessage, privateKeyExchange, RSAEncryptionPadding.OaepSHA1));
 ```
 
 * Signing and signature validation using RSA certificates or CNG certificates with pin.
 ```cs
 //Sign the message into base64 string
 string signedMessage = Crypto.SignData
-    (Encoding.UTF8.GetBytes(message), privateKeySignature, HashAlgorithmName.SHA512);
+(Encoding.UTF8.GetBytes(message), privateKeySignature, HashAlgorithmName.SHA512);
 //Validate the signed message as base64 string
 bool validationStatus = Crypto.VerifyData
-    (Encoding.UTF8.GetBytes(message), signedMessage, publicKeySignature, HashAlgorithmName.SHA512);
+(Encoding.UTF8.GetBytes(message), signedMessage, publicKeySignature, HashAlgorithmName.SHA512);
 ```
 
 * Signing XML and XML signature validation using RSA certificates or CNG certificates with pin.
@@ -108,3 +108,6 @@ To use CryptoHelper library please download the Library.zip at root and include 
 
 ## Sample 
 Please clone the project and run the samples for better understanding of the library.
+
+## Future Plans
+I plan to add PDF signing to CryptoHelper library in the near future.
