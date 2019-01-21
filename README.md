@@ -1,5 +1,6 @@
 ## CryptoHelper
-A library under MIT license made to help with cryptography operations such as RSA encryption and decryption, RSA signing and validation, and certificate generating with ease all what you need to do is add referance to CryptoHelper.dll and BouncyCastle.Crypto.dll in your project and please don't forget to include both [CryptoHelper](https://github.com/AlhasanDeveloper/CryptoHelper/blob/master/LICENSE) and [BouncyCastle](https://www.bouncycastle.org/license.html) license as well.
+A library made to help with cryptography operations such as RSA encryption and decryption, RSA signing and validation, and certificate generating with ease. 
+All what you need to do is add referance to CryptoHelper.dll and BouncyCastle.Crypto.dll to your project.
 
 ## The library include the following cryptography operations
 
@@ -104,10 +105,14 @@ string csrPEM = csr.CSRPEM;
 
 
 ## Release
-To use CryptoHelper library please download the Library.zip at root and include both libraries to your project.
+To use CryptoHelper library please download the [Library.zip](https://github.com/AlhasanDeveloper/CryptoHelper/blob/master/Library.zip) at root and include both libraries to your project.
 
 ## Sample 
 Please clone the project and run the samples for better understanding of the library.
+
+## License
+* [CryptoHelper](https://github.com/AlhasanDeveloper/CryptoHelper/blob/master/LICENSE) under MIT license.
+* [BouncyCastle](https://www.bouncycastle.org/license.html) under MIT license.
 
 ## Future Plans
 I plan to add PDF signing to CryptoHelper library in the near future.
