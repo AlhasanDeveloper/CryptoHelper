@@ -518,6 +518,18 @@ namespace CryptoHelper
             // Issuer and Subject Name
             certificateGenerator.SetIssuerDN(new X509Name(_subjectName));
             certificateGenerator.SetSubjectDN(new X509Name(_subjectName));
+            
+            // Issuer and Subject Name
+            if (_DistinguishedName == null)
+            {
+                certificateGenerator.SetIssuerDN(new X509Name(_subjectName));
+                certificateGenerator.SetSubjectDN(new X509Name(_subjectName));
+            }
+            else
+            {
+                certificateGenerator.SetIssuerDN(DistinguishedNamesToX509Name(_DistinguishedName));
+                certificateGenerator.SetSubjectDN(DistinguishedNamesToX509Name(_DistinguishedName));
+            }
 
             // Add SAN extension
             if (_SubjectAlternativeName != null)
@@ -530,7 +542,7 @@ namespace CryptoHelper
                 );
             }
 
-            // Basic Constraints - certificate is allowed to be used as intermediate.
+            // Basic Constraints - certificate is not allowed to be used as intermediate.
             certificateGenerator.AddExtension(
                 X509Extensions.BasicConstraints.Id, true, new BasicConstraints(false));
 
@@ -578,7 +590,15 @@ namespace CryptoHelper
 
             //Generate CSR
             ISignatureFactory signatureFactory = new Asn1SignatureFactory(PKCS15SignatureAlgorithmList[(int)_signatureAlgorithm], issuerKeyPair.Private, random);
-            Pkcs10CertificationRequest certificationRequest = new Pkcs10CertificationRequest(signatureFactory, new X509Name(_subjectName), subjectKeyPair.Public, null);
+            Pkcs10CertificationRequest certificationRequest = null;
+            if (_DistinguishedName == null)
+            {
+                certificationRequest = new Pkcs10CertificationRequest(signatureFactory, new X509Name(_subjectName), subjectKeyPair.Public, null);
+            }
+            else
+            {
+                certificationRequest = new Pkcs10CertificationRequest(signatureFactory, DistinguishedNamesToX509Name(_DistinguishedName), subjectKeyPair.Public, null);
+            }
             var certificate = certificateGenerator.Generate(signatureFactory);
 
             //Build the CSR
