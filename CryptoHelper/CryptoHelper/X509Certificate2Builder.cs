@@ -514,10 +514,6 @@ namespace CryptoHelper
             // Signature Algorithm
             if (_signatureAlgorithm < 0 || (int)_signatureAlgorithm >= PKCS15SignatureAlgorithmList.Length)
                 _signatureAlgorithm = PKCS15SignatureAlgorithm.SHA256WITHRSA;
-
-            // Issuer and Subject Name
-            certificateGenerator.SetIssuerDN(new X509Name(_subjectName));
-            certificateGenerator.SetSubjectDN(new X509Name(_subjectName));
             
             // Issuer and Subject Name
             if (_DistinguishedName == null)

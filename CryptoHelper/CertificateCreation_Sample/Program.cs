@@ -150,7 +150,19 @@ namespace CertificateCreation_Sample
             //Create CSR (certificate signing request)
             X509Certificate2Builder.CSR csr = new X509Certificate2Builder
             {
-                SubjectName = "CN=My Name, C=KW, O=My Organization, OU=My Organization Unit, L=Hawally, E=me@example.com",
+                //SubjectName = "CN=My Name, C=KW, O=My Organization, OU=My Organization Unit, L=Hawally, E=me@example.com",
+                DistinguishedName = new DistinguishedNames
+                {
+                    commonName = "My Name",
+                    countryName = "KW",
+                    organizationName = "My Organization",
+                    organizationalUnitName = "My Organization Unit",
+                    localityName = "Hawally",
+                },
+                SubjectAlternativeName = new SubjectAlternativeNames
+                {
+                    Rfc822Name = "me@example.com"
+                },
                 friendlyName = "My Friendly Name",
                 keyPurpose = new string[] { },
                 keyUsage = BuilderKeyUsage.DigitalSignature,
